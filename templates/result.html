@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>Lab 13</title>
+</head>
+<body>
+<div class="page">
+    <header>
+        <p><span class="b1"> Backend2 </span> <a href="/" class="home">Home</a> <a href="/" class="mockups">Mockups</a></p>
+    </header>
+
+    <div class="center">
+        <h2 class="links-h2">Quiz Result</h2>
+        <div class="result">
+            Right answers <span>{{ right_answers[0] }}</span> out of <span>{{ all_answers[0] }}</span>
+            <ol class="answers">
+                {% for answer in answers %}
+                <li>{{ answer.example }} = {{ answer.answer }}</li>
+                {% endfor %}
+            </ol>
+        </div>
+
+    </div>
+    <div class="underscore"> </div>
+
+    <footer><p>© 2023 - Backend3</p></footer>
+
+</div>
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
+<!--  python app.py -->
+<!-- http://127.0.0.1:5000/ -->

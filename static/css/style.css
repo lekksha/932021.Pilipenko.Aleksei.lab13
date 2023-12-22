@@ -1,0 +1,55 @@
+header{
+    width:100%;
+    height: 50px;
+    background-color: #222222;
+    color: gray;
+    font-size: 26px;
+    padding-left: 100px;
+    word-spacing: 30px;
+}
+.underscore{
+    border-bottom: 1px solid gray;
+    margin-left:100px;
+    width:calc(100% - 150px);
+    margin-bottom:1vh;
+}
+.center{
+    margin-left: 100px;
+}
+footer{
+    margin-left: 100px;
+    position: relative;
+    width:100%;
+    font-size: 2vh;
+}
+a{
+    text-decoration: none;
+}
+.b1{
+    font-weight: bold;
+}
+.check{
+    display: none;
+}
+
+.home, .mockups{
+    color: gray;
+}
+.finish{
+    color: white;
+    background-color: blue;
+}
+.links-h2{
+    font-weight: bold;
+    font-size: 30px;
+}
+button{
+    width: 50px;
+    height: 20px;
+}
+.example{
+    margin-top: 30px;
+    border: 0;
+    font-weight: bold;
+    font-size: 15px;
+}
